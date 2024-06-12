@@ -21,15 +21,15 @@ const redlock = new Redlock([...redisClients], { /* options */ })
 
 For more detailed instructions, please refer to the [official redlock library documentation](https://www.npmjs.com/package/redlock).
 
-## Why?
+## Introduction
 
 The package is a modified version of the build output of redlock. It is not a direct copy of the source code.
 
-当我们的 `tsconfig.json` 中设置为以下属性时，`typescript` 将会读取 `package.json` 的 `exports` 属性。
+When the `tsconfig.json` is configured with certain properties, `typescript` will read the `exports` field from the `package.json`.
 
-`redlock@5.0.0-beta.2` 并未设置 `"exports['.'].types": "./dist/index.d.ts"` 信息，所以无法正常获取类型文件。
+However, `redlock@5.0.0-beta.2` did not set `"exports['.'].types": "./dist/index.d.ts"`, which prevented TypeScript from properly resolving the type files.
 
-而且 `redlock@5.0.0-beta.2` 中 `package.json` 的 `"type": "module"` 默认使用 `ESM` 格式，所以创建了 `@hz-9/redlock`。
+Also, `redlock@5.0.0-beta.2` uses `"type": "module"` in its `package.json`, which defaults to the ESM (ES Module) format. Therefore, `@hz-9/redlock` was created.
 
 ## Different with `redlock`
 
