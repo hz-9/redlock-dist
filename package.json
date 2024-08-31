@@ -1,6 +1,6 @@
 {
   "name": "@hz-9/redlock-dist",
-  "version": "5.0.0-beta.2-2",
+  "version": "5.0.0-beta.2-3",
   "description": "A derived version of Redlock.",
   "keywords": [
     "nodejs",
@@ -8,6 +8,7 @@
     "lock",
     "redis"
   ],
+  "homepage": "https://github.com/hz-9/redlock-dist",
   "repository": "https://github.com/hz-9/redlock-dist.git",
   "license": "MIT",
   "exports": {
